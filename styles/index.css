@@ -1,66 +1,38 @@
-/* General body styling */
-body {
-    font-family: Arial, sans-serif;
+/* Reset and General Styles */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Hero Section */
-.hero {
-    text-align: center;
-    padding: 40px;
-    background-color: #f9f9f9;
-    border-bottom: 1px solid #ccc;
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
 }
 
-.hero h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
+/* Hero Section with Background Image */
+.hero-section {
+    background-image: url('your-background-image.jpg'); /* Add your background image path here */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.hero button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
+/* Call-to-Action Button */
+.cta-button {
+    padding: 15px 30px;
+    font-size: 20px;
+    color: red;
     border: 1px solid #333;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-/* Features Section */
-.features {
-    display: flex;
-    justify-content: space-around;
-    padding: 40px;
-    background-color: #fff;
-    border-bottom: 1px solid #ccc;
-}
-
-.feature-box {
-    border: 1px solid #ccc;
-    padding: 20px;
-    width: 20%;
-    text-align: center;
-}
-
-/* Team Section */
-.team {
-    display: flex;
-    justify-content: space-between;
-    padding: 40px;
-}
-
-.team-description {
-    width: 60%;
-}
-
-.team-description h2 {
-    margin-bottom: 10px;
-}
-
-.team-image {
-    width: 30%;
-    background-color: #f1f1f1;
-    border: 1px solid #ccc;
-    text-align: center;
-    padding: 20px;
+.cta-button:hover {
+    background-color: #333;
+    color: white;
 }
