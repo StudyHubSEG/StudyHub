@@ -1,0 +1,53 @@
+
+/* Navbar styling */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f1f1;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+nav .logo a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.nav-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-bar li {
+    margin-right: 20px;
+}
+
+.nav-bar li a {
+    text-decoration: none;
+    padding: 10px 15px;
+    color: black;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.nav-bar li a:hover {
+    background-color: #ddd;
+}
+
+.nav-actions a {
+    text-decoration: none;
+    padding: 10px 15px;
+    color: black;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.nav-actions a:hover {
+    background-color: #ddd;
+}
