@@ -1,0 +1,38 @@
+/* Reset and General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Hero Section with Background Image */
+.hero-section {
+    background-image: url('your-background-image.jpg'); /* Add your background image path here */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Call-to-Action Button */
+.cta-button {
+    padding: 15px 30px;
+    font-size: 20px;
+    color: red;
+    border: 1px solid #333;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #333;
+    color: white;
+}
