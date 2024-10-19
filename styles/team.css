@@ -1,0 +1,107 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ccc;
+}
+
+.hero h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #333;
+}
+
+/* Features Section */
+.features, .pricing-container, .team-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+.feature-box, .plan, .team-member {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+}
+
+.feature-box {
+    width: 20%;
+}
+
+.plan {
+    width: 30%;
+}
+
+.plan h3, .team-member h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.plan .price {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.plan ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.plan ul li {
+    margin: 10px 0;
+}
+
+.plan button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #333;
+    background-color: white;
+}
+
+/* Team Section */
+.team-section {
+    text-align: center;
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+
+.team-section h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.team-container {
+    flex-wrap: wrap;
+}
+
+.team-member {
+    width: 25%;
+    margin-bottom: 20px;
+}
+
+.team-member .photo {
+    background-color: #e0e0e0;
+    padding: 50px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
