@@ -30,7 +30,7 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-1  # Update with your bucket's region
 
-      # Step 4: Sync files to the S3 bucket
-      - name: Sync files to S3
+      # Step 4: Sync files to the S3 bucket with public-read ACL
+      - name: Sync files to S3 with public-read ACL
         run: |
-          aws s3 sync . s3://uostudyhub --exclude ".git/*" --delete
+          aws s3 sync . s3://uostudyhub --exclude ".git/*" --acl public-read --delete
