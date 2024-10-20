@@ -27,17 +27,25 @@ body {
 }
 
 /* Features Section */
-.features {
-    display: flex;
-    justify-content: space-around;
+
+.features-section {
     padding: 40px;
     background-color: #fff;
-    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+.features-section h2 {
+    font-size: 24px;
+    margin-bottom: 40px;
+    color:#333;
 }
 
-.feature-section {
+.feature-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
     text-align: center;
-    padding: 40px;
 }
 
 .feature-box {
@@ -46,22 +54,12 @@ body {
     width: 20%;
     text-align: center;
 }
-.feature-container {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-    text-align: center;
-}
-
-.features-section h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
 
 .feature-box h3 {
     font-size: 20px;
     margin-bottom: 10px;
 }
+
 /* Team Section */
 .team {
     display: flex;
