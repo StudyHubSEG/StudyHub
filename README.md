@@ -1,1 +1,1 @@
-https://uostudyhub.s3.amazonaws.com/StudyHub/index.html
+https://uostudyhub.s3.amazonaws.com/index.html

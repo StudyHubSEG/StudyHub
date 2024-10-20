@@ -35,13 +35,33 @@ body {
     border-bottom: 1px solid #ccc;
 }
 
+.feature-section {
+    text-align: center;
+    padding: 40px;
+}
+
 .feature-box {
     border: 1px solid #ccc;
     padding: 20px;
     width: 20%;
     text-align: center;
 }
+.feature-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    text-align: center;
+}
 
+.features-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.feature-box h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
 /* Team Section */
 .team {
     display: flex;
