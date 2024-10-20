@@ -3,18 +3,18 @@ name: Deploy to S3
 on:
   push:
     branches:
-      - main  # Or specify your default branch
+      - main
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Check out the repository
+      #Check out the repository
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      # Step 2: Install AWS CLI
+      #Install AWS CLI
       - name: Install AWS CLI
         run: |
           sudo apt-get update
@@ -22,15 +22,15 @@ jobs:
           pip3 install awscli --upgrade --user
           export PATH=$PATH:$HOME/.local/bin
 
-      # Step 3: Configure AWS credentials
+      #Configure AWS credentials
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: us-east-1  # Update with your bucket's region
+          aws-region: us-east-1
 
-      # Step 4: Sync files to the S3 bucket with public-read ACL
+      #Sync files to the S3 bucket with public-read ACL
       - name: Sync files to S3 with public-read ACL
         run: |
           aws s3 sync . s3://uostudyhub --exclude ".git/*" --acl public-read --delete
