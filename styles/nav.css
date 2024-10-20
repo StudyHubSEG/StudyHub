@@ -11,11 +11,13 @@ nav {
 
 nav .logo a {
     text-decoration: none;
-    font-size: 20px;
-    font-weight: bold;
-    color: black;
+    color: #fff;
 }
 
+nav .logo img {
+    width: 100px;
+    height: auto;
+}
 .nav-bar {
     list-style-type: none;
     margin: 0;
