@@ -1,0 +1,31 @@
+Overall Look and Feel of STUDYHUB
+===============================
+
+The overall look and feel should be (..).
+The website should (...) for the user.
+
+Colours
+========
+For Studyhub, colours expose our personality to the customers and represent that we are (...).
+These are our color swatches:
+
+- #color
+- #color
+- #color
+- #color
+- #color
+
+Iconography
+===========
+
+
+Typography
+==========
+
+
+Links
+=====
+
+
+Buttons
+=======
