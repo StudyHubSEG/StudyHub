@@ -9,23 +9,25 @@ Colours
 For Studyhub, colours expose our personality to the customers and represent that we are (...).
 These are our color swatches:
 
-- #color
-- #color
-- #color
-- #color
-- #color
+- #addcolor
+- #addcolor
+- #addcolor
+- #addcolor
+- #addcolor
 
 Iconography
 ===========
-
+We will be using the icons from Fontawesome : https://fontawesome.com/icons. 
+We will mostly use solid (Great for making bold statements or small size) 
+and regular (Easy, readable icons that blend right in) icons.
 
 Typography
 ==========
-
+We will be using (Font) from Google Font.
 
 Links
 =====
-
+Links will not be underlined and should change color when a user hovers over it. 
 
 Buttons
 =======
