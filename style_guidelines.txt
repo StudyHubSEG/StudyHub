@@ -18,12 +18,18 @@ These are our color swatches:
 Iconography
 ===========
 We will be using the icons from Fontawesome : https://fontawesome.com/icons. 
+
 We will mostly use solid (Great for making bold statements or small size) 
 and regular (Easy, readable icons that blend right in) icons.
 
 Typography
 ==========
-We will be using (Font) from Google Font.
+We will be using fonts from Google Font.
+
+Heading (h1) will use (name of the font).
+Sub-Heading (h2) will use (name of the font).
+Sub-Heading (h3) will use (name of the font).
+The paragraphs will use (name of the font).
 
 Links
 =====
@@ -31,3 +37,4 @@ Links will not be underlined and should change color when a user hovers over it.
 
 Buttons
 =======
+Buttons will be round-edged. They should change color when a user hovers over it.
