@@ -2,3 +2,5 @@ Study Hub is a platform designed for university students to easily create and jo
 
 Use this link to see the current website of main branch:
 https://uostudyhub.s3.amazonaws.com/index.html
+OR THIS ONE:
+http://studyhubseg.github.io/StudyHub/
