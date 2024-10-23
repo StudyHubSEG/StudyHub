@@ -4,9 +4,10 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f1f1f1;
+    background-color: #FF6F61;
     padding: 10px 20px;
     border-bottom: 1px solid #ccc;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 nav .logo a {
@@ -32,9 +33,11 @@ nav .logo img {
 .nav-bar li a {
     text-decoration: none;
     padding: 10px 15px;
-    color: black;
-    border: 1px solid #ccc;
+    background-color: #FFFACD;
+    color: #FF6F61;
+    border: 1px solid;
     border-radius: 5px;
+    text-decoration:non;
 }
 
 .nav-bar li a:hover {
@@ -44,12 +47,13 @@ nav .logo img {
 .nav-actions a {
     text-decoration: none;
     padding: 10px 15px;
-    color: black;
-    border: 1px solid #ccc;
+    color: #FF6F61;
+    background-color: #FFFACD;
+    border: 1px solid;
     border-radius: 5px;
     margin-left: 10px;
 }
 
 .nav-actions a:hover {
-    background-color: #ddd;
+    background-color: #fff;
 }
