@@ -27,10 +27,13 @@ Typography
 ==========
 We will be using fonts from Google Font.
 
-Heading (h1) will use (name of the font).
-Sub-Heading (h2) will use (name of the font).
-Sub-Heading (h3) will use (name of the font).
-The paragraphs will use (name of the font).
+Heading one (h1) will use (name of the font) and will be ( put in font-size) px.
+Heading two (h2) will use (name of the font) and will be ( put in font-size px.
+Heading three (h3) will use (name of the font) and will be ( put in font-size) px.
+Heading four (h4) will use (name of the font) and will be ( put in font-size) px.
+Heading five (h5) will use (name of the font) and will be ( put in font-size).
+Heading six (h6) will use (name of the font) and will be ( put in font-size).
+Body text will use (name of the font).
 
 Links
 =====
