@@ -1,8 +1,8 @@
 Overall Look and Feel of STUDYHUB
 ===============================
 
-The overall look and feel should be (modern, colorful and youthful).
-The website should (friendly and appealing) for the user.
+The overall look and feel should be modern, colorful and youthful.
+The website should be friendly and appealing to the user.
 
 Colours
 ========
@@ -10,30 +10,27 @@ For Studyhub, colours expose our personality to the customers and represent that
 
 These are our color swatches:
 
-- #addcolor
-- #addcolor
-- #addcolor
-- #addcolor
-- #addcolor
+- Primary Accent: #008CC9 (Bold, reliable blue for trust and professionalism)
+- Secondary Accent: #97AACE (Soft, approachable blue, inviting and calm)
+- Neutral Background: #E5E5E5 (Light gray, keeping it modern and minimalistic)
+- Highlight Color: #FFCA3A (Bright yellow, adding a touch of energy and positivity)
+- Call-to-Action: #FF595E (Vibrant coral red, eye-catching and motivating action)
 
 Iconography
 ===========
 We will be using the icons from Fontawesome : https://fontawesome.com/icons. 
 
-We will mostly use solid (Great for making bold statements or small size) 
-and regular (Easy, readable icons that blend right in) icons.
+We will mostly use solid (great for making bold statements or small size) 
+and regular (easy, readable icons that blend right in) icons.
 
 Typography
 ==========
-We will be using fonts from Google Font.
+We will be using Times New Roman.
 
-Heading one (h1) will use (name of the font) and will be ( put in font-size) px.
-Heading two (h2) will use (name of the font) and will be ( put in font-size px.
-Heading three (h3) will use (name of the font) and will be ( put in font-size) px.
-Heading four (h4) will use (name of the font) and will be ( put in font-size) px.
-Heading five (h5) will use (name of the font) and will be ( put in font-size).
-Heading six (h6) will use (name of the font) and will be ( put in font-size).
-Body text will use (name of the font).
+Heading one - 64 px	
+Heading two - 48 px
+Heading three - 32 px
+Body text  20 px .
 
 Links
 =====
@@ -45,4 +42,4 @@ Buttons will be round-edged. They should change color when a user hovers over it
 
 Image styles
 ============
-Images will be (real images, illustrations, etc.)
+Images will be a mix of real images and illustrations.
