@@ -25,7 +25,7 @@ and regular (easy, readable icons that blend right in) icons.
 
 Typography
 ==========
-We will be using Times New Roman.
+We will be using the font "Inter" from Google Fonts.
 
 Heading one - 64 px	
 Heading two - 48 px
