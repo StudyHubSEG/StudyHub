@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #F5F5DC;
+    background-color: #E5E5E5;
 }
 
 /* Pricing Section */
@@ -27,17 +27,17 @@ body {
 
 .plan {
     border: 1px solid #d3d3d3;
-    border-radius: 5px;
+    border-radius: 30px;
     padding: 20px;
     width: 250px;
     text-align: center;
-    background-color: #FFFACD;
+    background-color: white;
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .plan:hover {
     transform: translateY(-10px); /* Moves the plan box up slightly */
-    background-color: #FF6F61;
+    background-color: #97AACE;
 }
 .plan h3 {
     font-size: 32px;
@@ -73,7 +73,7 @@ body {
 }
 
 .plan button:hover {
-    background-color: lightblue;
+    background-color: #FF595E;
     color: white;
 }
 .plan button a {
@@ -97,5 +97,5 @@ body {
     color: #DAA520; /* Goldenrod for Premium */
 }
 .fa-circle-check {
-    color:#FF6F61 ;
+    color: #FFCA3A;
 }
