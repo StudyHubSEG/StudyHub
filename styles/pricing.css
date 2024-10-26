@@ -9,10 +9,29 @@ body {
 
 /* Hero section */
 .hero-section {
-    background-color: #97AACE;
+    background-image: url("../photos/studygroup-min.jpg");
+    background-size: cover;
+    background-position: center;
     color: white;
     text-align: center;
-    padding: 60px 20px; /* Ajust the spacing */
+    padding: 60px 20px; /* Adjust the spacing */
+    position: relative; /* Required for overlay */
+}
+
+.hero-section:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for contrast */
+    z-index: 1; /* Ensure it’s behind text */
+}
+
+.hero-section h2, .hero-section p, .cta-button {
+    position: relative; /* Ensure these elements are above the overlay */
+    z-index: 2; /* Keep text and button above overlay */
 }
 
 .hero-section h2 {
@@ -72,6 +91,7 @@ body {
     transform: translateY(-10px); /* Moves the plan box up slightly */
     background-color: #97AACE;
 }
+
 .plan h3 {
     font-size: 32px;
     border-bottom: 1px solid #d3d3d3;
@@ -109,6 +129,7 @@ body {
     background-color: #FF595E;
     color: white;
 }
+
 .plan button a {
     text-decoration: none; /* Remove the line on the bottom of the link */
     color: black;
@@ -119,16 +140,19 @@ body {
     margin-top: 20px;
     color: #FF6F61; /* Coral for Basic */
 }
+
 .fa-crown{
     font-size: 32px;
     margin-top: 20px;
     color: #FFD700; /* Gold for Plus */
 }
+
 .fa-star{
     font-size: 32px;
     margin-top: 20px;
     color: #DAA520; /* Goldenrod for Premium */
 }
+
 .fa-circle-check {
     color: #FFCA3A;
 }
