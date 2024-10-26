@@ -25,7 +25,8 @@ body, html {
 }
 /* Main Headline styling */
 .hero-section h1 {
-    font-size: 64px;
+    font-size: 128px;
+    font-family: "Sedgwick Ave Display", Static ;
     color: black;
     margin: 0;
     letter-spacing: 2px;
