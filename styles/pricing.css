@@ -156,3 +156,41 @@ body {
 .fa-circle-check {
     color: #FFCA3A;
 }
+
+/* FAQ section */
+.faq-section {
+    padding: 60px 20px;
+    background-color: #E5E5E5;
+    text-align: center;
+}
+
+.faq-section h2 {
+    font-size: 36px;
+    color: #008CC9;
+    margin-bottom: 20px;
+}
+.faq-container {
+    max-width: 800px;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.faq-item {
+    margin: 15px 0;
+    border-bottom: 1px solid #008CC9;
+}
+
+.faq-question {
+    font-size: 20px;
+    color: #008CC9;
+    font-weight: bold;
+    margin: 0;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px 15px;
+    color: #008CC9;
+}
