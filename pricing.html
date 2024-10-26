@@ -138,5 +138,30 @@
     <footer>
         <p>&copy; 2024 STUDYHUB. All rights reserved.</p>
     </footer>
+
+    <script>
+        // Get all the elements that have a class "faq-question"
+        let faqQuestions = document.querySelectorAll(".faq-question");
+
+        // Go through every question and add a click action to it
+        faqQuestions.forEach(function(question) {
+            question.onclick = function() {
+
+                // Find the answer right below this question
+                let answer = question.nextElementSibling;
+
+                // Check if the answer is currently shown ("block" means shown)
+                if (answer.style.display === "block") {
+                    answer.style.display = "none"; // Hide the answer
+                }
+                else {
+                    answer.style.display = "block"; // Show the answer
+                }
+
+                // Toggle the "active" class to add styling if needed
+                question.classList.toggle("active");
+            };
+        });
+    </script>
 </body>
 </html>
