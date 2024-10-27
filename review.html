@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Page</title>
+    <link rel="stylesheet" href="styles/review.css">
+
+    <!-- Font Awesome Library for star icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Review Form on the Left -->
+        <div class="review-form">
+            <h2>Share your experience!</h2>
+            <div id="stars">
+                <i class="fa-regular fa-star" onclick="highlightStars(1)"></i>
+                <i class="fa-regular fa-star" onclick="highlightStars(2)"></i>
+                <i class="fa-regular fa-star" onclick="highlightStars(3)"></i>
+                <i class="fa-regular fa-star" onclick="highlightStars(4)"></i>
+                <i class="fa-regular fa-star" onclick="highlightStars(5)"></i>
+            </div>
+            <textarea id="comment" placeholder="Leave a comment..."></textarea>
+            <button onclick="addReview()">Submit Review</button>
+        </div>
+
+        <!-- Display Submitted Reviews on the Right -->
+        <div id="reviewDisplay" class="review-display">
+            <h2>Previous Reviews:</h2>
+            <!-- Reviews will be added here with JavaScript -->
+        </div>
+    </div>
+
+    <script>
+        var selectedRating = 0;
+
+        function highlightStars(rating) {
+            selectedRating = rating;
+            var stars = document.getElementById("stars").children;
+            
+            for (var i = 0; i < stars.length; i++) {
+                if (i < rating) {
+                    stars[i].classList.add("fa-solid"); // Filled star
+                    stars[i].classList.remove("fa-regular"); // Unfilled star
+                } else {
+                    stars[i].classList.add("fa-regular"); // Unfilled star
+                    stars[i].classList.remove("fa-solid"); // Remove filled star
+                }
+            }
+        }
+
+        function addReview() {
+            var comment = document.getElementById("comment").value;
+
+            if (selectedRating > 0 && comment !== "") {
+                var reviewBox = document.createElement("div");
+                reviewBox.className = "review-box"; 
+
+                var ratingText = document.createElement("p");
+                ratingText.innerText = "Rating: " + selectedRating + " star(s)";
+
+                var commentText = document.createElement("p");
+                commentText.innerText = "Comment: " + comment;
+
+                reviewBox.appendChild(ratingText);
+                reviewBox.appendChild(commentText);
+
+                var reviewDisplay = document.getElementById("reviewDisplay");
+                reviewDisplay.appendChild(reviewBox);
+
+                document.getElementById("comment").value = "";
+                highlightStars(0); 
+            } else {
+                alert("Please select a rating and write a comment.");
+            }
+        }
+    </script>
+
+</body>
+</html>

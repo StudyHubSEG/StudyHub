@@ -1,0 +1,45 @@
+Overall Look and Feel of STUDYHUB
+===============================
+
+The overall look and feel should be modern, colorful and youthful.
+The website should be friendly and appealing to the user.
+
+Colours
+========
+For Studyhub, colours expose our personality to the customers and represent that we are a compagny made by students, for students.
+
+These are our color swatches:
+
+- Primary Accent: #008CC9 (Bold, reliable blue for trust and professionalism)
+- Secondary Accent: #97AACE (Soft, approachable blue, inviting and calm)
+- Neutral Background: #E5E5E5 (Light gray, keeping it modern and minimalistic)
+- Highlight Color: #FFCA3A (Bright yellow, adding a touch of energy and positivity)
+- Call-to-Action: #FF595E (Vibrant coral red, eye-catching and motivating action)
+
+Iconography
+===========
+We will be using the icons from Fontawesome : https://fontawesome.com/icons. 
+
+We will mostly use solid (great for making bold statements or small size) 
+and regular (easy, readable icons that blend right in) icons.
+
+Typography
+==========
+We will be using the font "Inter" from Google Fonts.
+
+Heading one - 64 px	
+Heading two - 48 px
+Heading three - 32 px
+Body text  20 px .
+
+Links
+=====
+Links will not be underlined and should change color when a user hovers over it. 
+
+Buttons
+=======
+Buttons will be round-edged. They should change color when a user hovers over it.
+
+Image styles
+============
+Images will be a mix of real images and illustrations.

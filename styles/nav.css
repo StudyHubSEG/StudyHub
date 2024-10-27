@@ -4,9 +4,10 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f1f1f1;
+    background-color: #008CC9;
     padding: 10px 20px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #E5E5E5;
+    font-family: "Inter", sans-serif;
 }
 
 nav .logo a {
@@ -32,9 +33,11 @@ nav .logo img {
 .nav-bar li a {
     text-decoration: none;
     padding: 10px 15px;
-    color: black;
-    border: 1px solid #ccc;
+    background-color: #E5E5E5;
+    color: #008CC9;
+    border: 1px solid;
     border-radius: 5px;
+    text-decoration:non;
 }
 
 .nav-bar li a:hover {
@@ -44,8 +47,9 @@ nav .logo img {
 .nav-actions a {
     text-decoration: none;
     padding: 10px 15px;
-    color: black;
-    border: 1px solid #ccc;
+    color: #008CC9;
+    background-color: #E5E5E5;
+    border: 1px solid;
     border-radius: 5px;
     margin-left: 10px;
 }

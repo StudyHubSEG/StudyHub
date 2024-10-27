@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyHub - Sign In & Sign Up</title>
+
+    <!-- Link to FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Link to Google Font "Inter" -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="styles/signin.css">
+
+</head>
+<body>
+    <div class="container">
+        <!-- Sign In Form -->
+        <div class="form-box" id="signInForm">
+            <i class="fas fa-graduation-cap graduation-icon"></i>
+            <h1>Sign In</h1>
+            <p class="subtitle">Welcome back! Please sign in to continue.</p>
+            <form>
+                <div class="input-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Username" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="form-button">Sign In</button>
+            </form>
+            <p class="toggle-text">Don't have an account? <a href="#" onclick="toggleForms()">Sign up</a></p>
+        </div>
+
+        <!-- Sign Up Form -->
+        <div class="form-box" id="signUpForm" style="display: none;">
+            <i class="fas fa-graduation-cap graduation-icon"></i>
+            <h1>Sign Up</h1>
+            <p class="subtitle">Join StudyHub today! Create an account below.</p>
+            <form>
+                <div class="input-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Username" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="form-button">Sign Up</button>
+            </form>
+            <p class="toggle-text">Already have an account? <a href="#" onclick="toggleForms()">Sign in</a></p>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript function to toggle between sign-in and sign-up forms
+        function toggleForms() {
+            const signInForm = document.getElementById('signInForm');
+            const signUpForm = document.getElementById('signUpForm');
+            if (signInForm.style.display === "none") {
+                signInForm.style.display = "block";
+                signUpForm.style.display = "none";
+            } else {
+                signInForm.style.display = "none";
+                signUpForm.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

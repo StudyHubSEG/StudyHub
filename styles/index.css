@@ -7,7 +7,8 @@
 
 body, html {
     height: 100%;
-    font-family: Arial, sans-serif;
+    margin: 0;
+    font-family: "Inter", sans-serif;
 }
 
 /* Hero Section with Background Image */
@@ -16,20 +17,39 @@ body, html {
     background-size: cover;
     background-position: center;
     height: 100vh; /* Full viewport height */
+    flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+}
+/* Main Headline styling */
+.hero-section h1 {
+    font-size: 128px;
+    font-family: "Sedgwick Ave Display", Static ;
+    color: black;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+/* Secondary Headline styling */
+.hero-section h2 {
+    font-size: 24px;
+    color: black;
+    margin-top: 10px;
 }
 
 /* Call-to-Action Button */
 .cta-button {
-    padding: 15px 30px;
-    font-size: 20px;
+    margin-top: 100px;
+    padding: 10px 20px;
+    font-size: 24px;
     color: red;
     border: 1px solid #333;
+    border-radius: 5px;
     background-color: transparent;
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .cta-button:hover {
