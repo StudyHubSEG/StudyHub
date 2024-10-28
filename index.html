@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Links to script -->
+    <script src="scripts/nav.js"></script>
+
+
     <!-- Links to style sheets -->
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/nav.css">
@@ -27,21 +31,20 @@
     <nav>
         <div class="logo">
             <a href="index.html">
-                <img src="photos/studyhub-high-resolution-logo-transparent.png" alt="Logo" > <!-- Logo image! -->
+                <img src="photos/studyhub-high-resolution-logo-transparent.png" alt="Logo"> <!-- Logo image! -->
             </a>
         </div>
         <ul class="nav-bar">
             <li><a href="feature.html">Features</a></li>
             <li><a href="pricing.html">Plans</a></li>
             <li><a href="team.html">Team</a></li>
-            <li><a href = "review.html">Reviews</li>
         </ul>
         <div class="nav-actions">
-            <a href="#">Download</a>
-            <a href="signin.html">Sign in</a>
+            <a href="signin.html" onclick="return signInPopup()">Sign in</a>
+            <a href="review.html" onclick="return reviewPopup()">Reviews</a>
         </div>
     </nav>
-
+    
     <!-- Hero section -->
     <div class="hero-section">
         <h1>STUDYHUB</h1>
