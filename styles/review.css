@@ -1,0 +1,109 @@
+/* Background for the page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F4F7FA; /* Soft neutral background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container for the review form and display */
+.container {
+    display: flex;
+    gap: 40px;
+    max-width: 1000px;
+    width: 100%;
+}
+
+/* Review form styling */
+.review-form {
+    background-color: #FFFFFF; /* White background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    text-align: center;
+    border: 1px solid #E5E5E5; /* Neutral border */
+}
+
+.review-form h2 {
+    color: #008CC9; /* Primary Accent */
+    margin-bottom: 15px;
+}
+
+/* Star rating section with Font Awesome stars */
+#stars {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    font-size: 24px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+#stars .fa-star {
+    color: #E5E5E5; /* Neutral color for unselected stars */
+    transition: color 0.3s ease; /* Smooth color change */
+}
+
+#stars .fa-solid {
+    color: #FFCA3A; /* Bright yellow for selected stars */
+}
+
+/* Textarea styling */
+textarea {
+    width: 90%;
+    height: 80px;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #97AACE; /* Secondary Accent */
+    border-radius: 4px;
+    resize: none;
+    font-size: 14px;
+    background-color: #F9FAFB; /* Light background */
+}
+
+/* Submit button styling */
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #FF595E; /* Call-to-Action */
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #FF4045; 
+}
+
+/* Review display styling */
+.review-display {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    border: 1px solid #E5E5E5;
+}
+
+.review-display h2 {
+    color: #008CC9; /* Primary Accent */
+    margin-top: 0;
+}
+
+/* Individual review box */
+.review-box {
+    background-color: #F9FAFB;
+    border: 1px solid #E5E5E5;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: #333; 
+}
