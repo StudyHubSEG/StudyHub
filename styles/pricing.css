@@ -5,6 +5,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-color: #E5E5E5;
+    user-select: none;
 }
 
 /* Hero section */

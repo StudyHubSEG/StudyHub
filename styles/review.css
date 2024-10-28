@@ -8,6 +8,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    user-select: none;
 }
 
 /* Container for the review form and display */
