@@ -22,16 +22,20 @@ body {
 }
 
 .cta-button {
-    display: inline-block;
-    text-decoration: none;
-    color: black;
-    text-transform: uppercase;
-    border-radius: 5px;
+    margin-top: 100px;
     padding: 10px 20px;
-    margin-top: 20px;
-    font-size: 16px;
+    font-size: 20px;
+    color: white;
+    background-color: #DC4441;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
-    border: 1px solid #333;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #FF6F61;
 }
 
 /* Features Section */
@@ -62,6 +66,9 @@ body {
     padding: 20px;
     width: 20%;
     text-align: center;
+    border: solid;
+    border-radius: 5px;
+    border-color: #DC4441
 }
 
 .feature-box h3 {
