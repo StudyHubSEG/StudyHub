@@ -17,6 +17,7 @@ body, html {
     background-image: url('your-background-image.jpg'); /* Add your background image path here */
     background-size: cover;
     background-position: center;
+    background-color: #E5E5E5; /* Fallback color */
     height: 100vh; /* Full viewport height */
     flex-direction: column;
     display: flex;
@@ -38,12 +39,12 @@ body, html {
     font-size: 24px;
     color: black;
     margin-top: 10px;
+    margin-bottom: 50px;
 }
 
 /* Call-to-Action Button */
 .cta-button {
-    margin-top: 100px;
-    padding: 10px 20px;
+    padding: 10px 15px;
     font-size: 24px;
     color: white;
     background-color: #DC4441;
@@ -54,6 +55,67 @@ body, html {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.cta-button:hover {
+.cta-button:hover, .cta-button:focus {
     background-color: #FF6F61;
+    outline: 2px solid #FF6F61;
+}
+
+.cta-button:focus-visible {
+    outline: 3px dashed #FF6F61; 
+}
+/* Benefit Section Styling*/
+
+.benefit-section {
+    background-color: #97AACE;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 20px;
+}
+
+.benefit-section h1 {
+    text-align: center;
+    font-size: 48px;
+    margin: 50px 0 50px 0;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px; 
+    margin: 15px 0; 
+    border: 2px solid #E5E5E5;
+    border-radius: 25px;
+}
+
+.benefit-content {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.benefit-item h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.benefit-item p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 50px;
+}
+.benefit-image {
+    margin-right: 20px;
+}
+.benefit-image img {
+    max-width: 500px;
+    height: auto;
+}
+
+.benefit-image img:hover {
+    transform: translateY(-10px) rotate(2deg); 
+    opacity: 0.9;
+    transition: transform 0.4s ease-in-out, opacity 0.3s ease;
 }
