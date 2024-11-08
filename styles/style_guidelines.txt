@@ -1,8 +1,8 @@
 Overall Look and Feel of STUDYHUB
 ===============================
 
-The overall look and feel should be modern, colorful and youthful.
-The website should be friendly and appealing to the user.
+The design should have a modern, vibrant, and youthful aesthetic, 
+creating a website that feels welcoming and visually engaging for users.
 
 Colours
 ========
@@ -34,12 +34,12 @@ Body text  20 px .
 
 Links
 =====
-Links will not be underlined and should change color when a user hovers over it. 
+Links will have no underline and will change color on hover to enhance interactivity.
 
 Buttons
 =======
-Buttons will be round-edged. They should change color when a user hovers over it.
+Buttons will feature rounded edges and a color change on hover for a visually dynamic effect.
 
 Image styles
 ============
-Images will be a mix of real images and illustrations.
+Images will include a combination of real photographs and illustrations.

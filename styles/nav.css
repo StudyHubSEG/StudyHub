@@ -8,6 +8,7 @@ nav {
     padding: 10px 20px;
     border-bottom: 1px solid #E5E5E5;
     font-family: "Inter", sans-serif;
+    user-select: none;
 }
 
 nav .logo a {
@@ -37,7 +38,8 @@ nav .logo img {
     color: #008CC9;
     border: 1px solid;
     border-radius: 5px;
-    text-decoration:non;
+    text-decoration:none;
+    text-align:center;
 }
 
 .nav-bar li a:hover {
@@ -57,3 +59,4 @@ nav .logo img {
 .nav-actions a:hover {
     background-color: #ddd;
 }
+

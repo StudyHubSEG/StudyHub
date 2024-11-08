@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Links to script -->
+    <script src="scripts/nav.js"></script>
+
+
     <!-- Links to style sheets -->
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/nav.css">
@@ -17,7 +21,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">  
 
-    
     <title>Home</title>
 </head>
 
@@ -27,30 +30,32 @@
     <nav>
         <div class="logo">
             <a href="index.html">
-                <img src="photos/studyhub-high-resolution-logo-transparent.png" alt="Logo" > <!-- Logo image! -->
+                <img src="photos/studyhub-high-resolution-logo-transparent.png" alt="Logo"> <!-- Logo image! -->
             </a>
         </div>
         <ul class="nav-bar">
             <li><a href="feature.html">Features</a></li>
             <li><a href="pricing.html">Plans</a></li>
             <li><a href="team.html">Team</a></li>
-            <li><a href = "review.html">Reviews</li>
         </ul>
         <div class="nav-actions">
-            <a href="#">Download</a>
-            <a href="signin.html">Sign in</a>
+            <a href="signin.html" onclick="return signInPopup()">Sign in</a>
         </div>
     </nav>
 
     <!-- Hero section -->
     <div class="hero-section">
-        <h1>STUDYHUB</h1>
-        <h2>Learn, Share & Connect</h2>
+        <h1>StudyHub</h1>
+        <br>
+        <h2>Learn - Share - Connect</h2>
         <button class="cta-button">
-        <a href="feature.html" class="cta-button">LET'S GET STARTED</a>  
+        <a href="feature.html" class="cta-button">LET'S GO</a>  
         </button>
     </div>
-
+   <!-- Footer Section --> 
+   <footer>
+        <p>&copy; 2024 STUDYHUB. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
