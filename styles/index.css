@@ -10,26 +10,29 @@ body, html {
     margin: 0;
     font-family: "Inter", sans-serif;
     user-select: none;
+    background-color: #e5e5e5;
 }
 
 /* Hero Section with Background Image */
 .hero-section {
-    background-image: url('your-background-image.jpg'); /* Add your background image path here */
+    background-image: url('../photos/hero-banner.jpg'); /* Add your background image path here */
     background-size: cover;
     background-position: center;
-    background-color: #E5E5E5; /* Fallback color */
+    background-color: #97AACE; /* Fallback color */
     height: 100vh; /* Full viewport height */
     flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    border: transparent;
+    border-radius: 0 0 100px 100px;
 }
 /* Main Headline styling */
 .hero-section h1 {
     font-size: 128px;
     font-family: "Sedgwick Ave Display", Static ;
-    color: black;
+    color: white;
     margin: 0;
     letter-spacing: 2px;
 }
@@ -37,7 +40,7 @@ body, html {
 /* Secondary Headline styling */
 .hero-section h2 {
     font-size: 24px;
-    color: black;
+    color: white;
     margin-top: 10px;
     margin-bottom: 50px;
 }
@@ -49,7 +52,7 @@ body, html {
     color: white;
     background-color: #DC4441;
     border: none;
-    border-radius: 5px;
+    border-radius: 15px;
     cursor: pointer;
     text-decoration: none;
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -66,7 +69,7 @@ body, html {
 /* Benefit Section Styling*/
 
 .benefit-section {
-    background-color: #97AACE;
+    background-color: #e5e5e5;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -75,11 +78,6 @@ body, html {
     padding: 20px;
 }
 
-.benefit-section h1 {
-    text-align: center;
-    font-size: 48px;
-    margin: 50px 0 50px 0;
-}
 
 .benefit-item {
     display: flex;
@@ -87,8 +85,6 @@ body, html {
     justify-content: space-between;
     padding: 25px; 
     margin: 15px 0; 
-    border: 2px solid #E5E5E5;
-    border-radius: 25px;
 }
 
 .benefit-content {
@@ -97,8 +93,12 @@ body, html {
 }
 
 .benefit-item h2 {
-    font-size: 48px;
+    font-size: 60px;
     margin-bottom: 20px;
+    font-family: "Modak", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: #FF595E;
 }
 
 .benefit-item p {
@@ -107,10 +107,10 @@ body, html {
     margin-bottom: 50px;
 }
 .benefit-image {
-    margin-right: 20px;
+    margin: 50px 20px 50px 0;
 }
 .benefit-image img {
-    max-width: 500px;
+    max-width: 600px;
     height: auto;
 }
 
@@ -118,4 +118,103 @@ body, html {
     transform: translateY(-10px) rotate(2deg); 
     opacity: 0.9;
     transition: transform 0.4s ease-in-out, opacity 0.3s ease;
+}
+
+/* Our mission Section Styling */
+.our_mission {
+    background-color: #008CC9;
+    color: #e5e5e5;
+    border: transparent;
+    border-radius: 50px 50px 0 0;
+}
+.our_mission-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px; 
+}
+
+.our_mission-content h2 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    font-family: "Modak", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: #e5e5e5;
+}
+.our_mission-content p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 50px;
+}
+.our_mission-image {
+    margin: 100px 0 ; 
+}
+
+.our_mission-image img {
+    max-width: 600px;
+    height: auto;
+}
+
+.our_mission-image img:hover {
+    transform: translateY(-10px) rotate(2deg); 
+    opacity: 0.9;
+    transition: transform 0.4s ease-in-out, opacity 0.3s ease;
+}
+
+/* Why Us Section Styling */
+.why_us {
+    background-color: #97AACE;
+    color: #e5e5e5;
+    border: transparent;
+}
+
+.why_us-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px; 
+}
+
+.why_us-content h2 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    font-family: "Modak", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: #e5e5e5;
+}
+.why_us-content p {
+    margin-bottom: 50px;
+}
+
+.why_us-content ul li {
+    font-size: 18px;
+    line-height: 2.5;
+}
+
+.custom-list li i {
+    margin-right: 10px; /* Space between icon and text */
+    color: #e5e5e5; /* Customize color */
+    font-size: 24px; /* Customize size */
+}
+
+.custom-list {
+    list-style: none; /* Remove default bullet points */
+    padding: 0;
+    margin: 0;
+}
+
+.custom-list li {
+    position: relative;
+    padding-left: 35px; /* Space for the icon */
+    margin-bottom: 15px; /* Optional: space between list items */
+}
+.why_us-image {
+    margin: 200px 0 ; 
+}
+
+.why_us-image img {
+    max-width: 600px;
+    height: auto;
 }

@@ -34,8 +34,8 @@ nav .logo img {
 .nav-bar li a {
     text-decoration: none;
     padding: 10px 15px;
-    background-color: #E5E5E5;
-    color: #008CC9;
+    background-color: transparent;
+    color: #E5E5E5;
     border: 1px solid;
     border-radius: 5px;
     text-decoration:none;
@@ -43,7 +43,7 @@ nav .logo img {
 }
 
 .nav-bar li a:hover {
-    background-color: #ddd;
+    transform: translateY(10px);
 }
 
 .nav-actions a {
