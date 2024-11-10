@@ -26,7 +26,7 @@ body, html {
     align-items: center;
     text-align: center;
     border: transparent;
-    border-radius: 0 0 100px 100px;
+    border-radius: 0 0 50px 50px;
 }
 /* Main Headline styling */
 .hero-section h1 {
@@ -217,4 +217,10 @@ body, html {
 .why_us-image img {
     max-width: 600px;
     height: auto;
+}
+
+.why_us-image img:hover {
+    transform: translateY(-10px) rotate(2deg); 
+    opacity: 0.9;
+    transition: transform 0.4s ease-in-out, opacity 0.3s ease;
 }
