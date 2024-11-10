@@ -6,7 +6,7 @@ nav {
     align-items: center;
     background-color: #008CC9;
     padding: 10px 20px;
-    border-bottom: 1px solid #E5E5E5;
+    border-bottom: transparent;
     font-family: "Inter", sans-serif;
     user-select: none;
 }
