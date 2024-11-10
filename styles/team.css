@@ -5,6 +5,9 @@ body {
     padding: 0;
     box-sizing: border-box;
     user-select: none;
+    color: black;
+
+    
 }
 
 /* Hero Section */
@@ -13,6 +16,7 @@ body {
     padding: 40px;
     background-color: #f9f9f9;
     border-bottom: 1px solid #ccc;
+    color: black;
 }
 
 .hero h1 {
@@ -25,6 +29,8 @@ body {
     font-size: 16px;
     cursor: pointer;
     border: 1px solid #333;
+    color: black;
+
 }
 
 /* Features Section */
@@ -34,6 +40,8 @@ body {
     padding: 40px;
     background-color: #fff;
     border-bottom: 1px solid #ccc;
+    color: black;
+
 }
 
 .feature-box, .plan, .team-member {
@@ -84,15 +92,22 @@ body {
     text-align: center;
     padding: 40px;
     background-color: #f9f9f9;
+    color: #333
 }
 
 .team-section h2 {
     font-size: 24px;
     margin-bottom: 30px;
+    color: #333;
+
 }
 
 .team-container {
     flex-wrap: wrap;
+    background-color: rgba(245, 222, 179, 0.6);
+    border-radius: 8px;
+    color: #333;
+    margin: 10px;
 }
 
 .team-member {
@@ -101,8 +116,31 @@ body {
 }
 
 .team-member .photo {
-    background-color: #e0e0e0;
-    padding: 50px;
+    padding: 10px; /* Reduced padding to give more room */
     border-radius: 10px;
     margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(245, 222, 179, 0.8);
+
 }
+
+.team-member .photo img {
+    width:12em; /* Adjust width as needed */
+    height: auto;
+    border-radius: 10%; /* Makes the image circular */
+}
+
+.team-section {
+    background-image: url('../photos/teambanner.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 100px; /* Adjust padding to control height */
+    padding-bottom: 20px;
+    color: #333;
+    text-align: center; /* Center text if needed */
+    
+}
+

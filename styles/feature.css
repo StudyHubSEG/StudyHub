@@ -13,6 +13,16 @@ body {
     padding: 40px;
     background-color: #f9f9f9;
     border-bottom: 1px solid #ccc;
+
+    background-image: url('../photos/communitybanner.png'), url('../photos/forum.png'); /* Stack banner and background images */
+    background-size: cover, cover; /* Cover the entire section */
+    background-position: top center, center; /* Position the banner at the top and main image centered */
+    background-repeat: no-repeat, no-repeat; /* Prevent both images from repeating */
+    padding-top: 160px; /* Adds space to show the banner image clearly */
+    padding-bottom: auto;
+    color: #333; /* Ensures text is readable */
+    position: relative;
+    
 }
 
 .hero h1 {
@@ -49,7 +59,7 @@ body {
     text-transform: uppercase;
     font-size: 24px;
     margin-bottom: 40px;
-    color:#333;
+    color: #333; /*SAME BODY CHOOSE A COLOR HERE#########################################################################*/
 }
 
 .feature-container {
@@ -77,6 +87,13 @@ body {
     margin-bottom: 10px;
 }
 
+.feature-box {
+    background-color: rgba(245, 222, 179, 0.8); /* Sandish white with 50% transparency */
+    padding: 20px;
+    border-radius: 8px; /* Optional: gives a rounded corner effect */
+    color: #333; /* Adjust text color for readability */
+    margin: 10px;
+}
 /* Team Section */
 .team {
     display: flex;
@@ -99,3 +116,13 @@ body {
     text-align: center;
     padding: 20px;
 }
+
+.features-section {
+    background-image: url('../photos/forum.png'); /* Path relative to CSS file */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: auto;
+    color: white;
+}
+
