@@ -112,7 +112,10 @@ body {
 
 .team-member {
     width: 25%;
+    height: auto;
     margin-bottom: 20px;
+    width: 200px;
+    height: auto;
 }
 
 .team-member .photo {
@@ -127,7 +130,7 @@ body {
 }
 
 .team-member .photo img {
-    width:12em; /* Adjust width as needed */
+    width: 12em; /* Adjust width as needed */
     height: auto;
     border-radius: 10%; /* Makes the image circular */
 }
