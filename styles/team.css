@@ -108,6 +108,9 @@ body {
     border-radius: 8px;
     color: #333;
     margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .team-member {
@@ -130,9 +133,9 @@ body {
 }
 
 .team-member .photo img {
-    width: 12em; /* Adjust width as needed */
+    width: 12rem; /* Adjust width as needed */
     height: auto;
-    border-radius: 10%; /* Makes the image circular */
+    border-radius: 10px; /* Makes the image circular */
 }
 
 .team-section {
@@ -144,6 +147,5 @@ body {
     padding-bottom: 20px;
     color: #333;
     text-align: center; /* Center text if needed */
-    
 }
 
