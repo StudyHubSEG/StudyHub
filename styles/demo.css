@@ -15,34 +15,6 @@ main {
     flex: 1;
 }
 
-/* Navbar styling */
-nav {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    background-color: #008CC9;
-    padding: 10px 20px;
-    animation: fadeIn 1s ease-in; /* Fade-in effect */
-}
-
-.nav-bar {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-.nav-bar a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.nav-bar a:hover {
-    background-color: #006f9f;
-}
-
 /* Demo Section */
 .demo-section {
     text-align: center;
