@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StudyHub - Demo</title>
+
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles/demo.css" />
+    <!-- Link to external JavaScript file -->
+    <script src="scripts/demo.js" defer></script>
+
+    <!-- Font Awesome Icons for UI -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <div class="logo">
+        <a href="index.html">
+            <img
+            src="photos/studyhub-high-resolution-logo-transparent.png"
+            alt="Logo"
+            style="max-width: 150px; height: auto;"
+        />        
+        </a>
+      </div>
+      <ul class="nav-bar">
+        <li><a href="feature.html">Features</a></li>
+        <li><a href="pricing.html">Plans</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="demo.html">Demo</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="signin.html">Sign In</a>
+      </div>
+    </nav>
+
+    <!-- Demo Section -->
+    <section class="demo-section">
+      <h1>StudyHub Demo</h1>
+      <p>Create and join study rooms or filter rooms by course.</p>
+      <button class="cta-button" onclick="toggleCreateRoom()">
+        Create Study Room
+      </button>
+    </section>
+
+    <!-- Create Study Room Modal -->
+    <div id="createRoomForm" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="toggleCreateRoom()">&times;</span>
+        <h2>Create a Study Room</h2>
+        <form id="createRoom">
+          <label for="courseCode">Course Code:</label>
+          <input type="text" id="courseCode" required />
+
+          <label for="roomName">Room Name:</label>
+          <input type="text" id="roomName" required />
+
+          <label for="maxParticipants">Max Participants:</label>
+          <input type="number" id="maxParticipants" min="1" required />
+
+          <label for="description">Description:</label>
+          <textarea
+            id="description"
+            placeholder="Briefly describe what you are studying"
+            rows="3"
+            required
+          ></textarea>
+
+          <label for="date">Date:</label>
+          <input type="date" id="date" required />
+
+          <label for="time">Time:</label>
+          <input type="time" id="time" required />
+
+          <button type="submit">Create Room</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Filter Rooms Section -->
+    <section class="filter-section">
+      <h2>Available Study Rooms</h2>
+      <label for="courseFilter">Filter by Course:</label>
+      <input
+        type="text"
+        id="courseFilter"
+        placeholder="Enter course code"
+        onkeyup="filterRooms()"
+      />
+    </section>
+
+    <!-- Study Room List -->
+    <section id="roomList" class="room-list">
+      <!-- Rooms will dynamically populate here -->
+    </section>
+
+    <!-- Discussion Forums Section -->
+    <section id="discussion-forum" class="feature-section">
+      <h2>Discussion Forums</h2>
+      <form id="forumPostForm">
+        <textarea
+          id="forumPostContent"
+          placeholder="Ask a question or share advice..."
+          rows="2"
+          required
+        ></textarea>
+        <button type="submit">Post</button>
+      </form>
+      <div id="forumPostsContainer"></div>
+      <!-- Container for posts and replies -->
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 STUDYHUB. All rights reserved.</p>
+    </footer>
+    <!-- Interest-Based Groups Section -->
+    <section id="interest-groups" class="feature-section">
+      <h2>Interest-Based Groups</h2>
+      <p>
+        Form study groups based on hobbies, career goals, and shared interests,
+        not just academic courses.
+      </p>
+      <button class="cta-button" onclick="toggleCreateInterestGroup()">
+        Create Interest Group
+      </button>
+
+      <!-- Create Interest Group Modal -->
+      <div id="createInterestGroupForm" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="toggleCreateInterestGroup()"
+            >&times;</span
+          >
+          <h2>Create an Interest-Based Group</h2>
+          <form id="createInterestGroup">
+            <label for="interest"
+              >Interest (e.g., Tech Careers, Music Enthusiasts):</label
+            >
+            <input type="text" id="interest" required />
+
+            <label for="groupDescription">Description:</label>
+            <textarea
+              id="groupDescription"
+              placeholder="Describe this interest group"
+              rows="3"
+              required
+            ></textarea>
+
+            <button type="submit">Create Group</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- List of Interest-Based Groups -->
+      <div id="interestGroupList" class="group-list">
+        <!-- Interest-Based Groups will dynamically populate here -->
+      </div>
+    </section>
+  </body>
+</html>
