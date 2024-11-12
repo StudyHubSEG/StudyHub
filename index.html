@@ -46,7 +46,7 @@
 
     <!-- Hero section -->
     <section class="hero-section">
-        <h1>StudyHub</h1>
+        <h1><span class="autotype"> </span></h1>
         <br>
         <h2>Learn - Share - Connect</h2>
         <a href="feature.html" class="cta-button">LET'S GO</a>  
@@ -122,6 +122,19 @@
    <footer>
         <p>&copy; 2024 STUDYHUB. All rights reserved.</p>
     </footer>
+    
+    <!-- Logo typing animation -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    
+    <script>
+        let typed = new Typed(".autotype", {
+            strings: ["Studyhub"],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true
+        })
+
+    </script>
 
 </body>
 </html>
