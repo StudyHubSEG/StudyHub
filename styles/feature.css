@@ -5,7 +5,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     user-select: none;
-    background-color: #f1f1f1;
+    background-color: #e5e5e5;
 }
 
 /* Hero Section */
@@ -20,8 +20,6 @@ body {
     padding-bottom: auto;
     align-items: center;
     text-align: center;
-    border: 1px transparent;
-    border-radius: 0 0 50px 50px;
 }
 
 
@@ -74,25 +72,28 @@ body {
     border: 1px solid #ccc;
     padding: 20px;
     width: 20%;
+    height: auto;
     text-align: center;
     border: solid;
     border-radius: 5px;
-    border-color: #DC4441
-    
-}
-
-.feature-box h3 {
-    font-size: 28px;
-    margin-bottom: 10px;
-}
-
-.feature-box {
+    border-color: #DC4441;
     background-color: rgba(245, 222, 179, 0.8); /* Sandish white with 50% transparency */
     padding: 20px;
     border-radius: 8px; /* Optional: gives a rounded corner effect */
     color: #333; /* Adjust text color for readability */
     margin: 10px;
 }
+
+.feature-box h3 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.feature-box:hover {
+    border: 2px solid #008CC9;
+    transform: translateY(-10px); /* Moves the plan box up slightly */
+}
+
 /* Team Section */
 .team {
     display: flex;

@@ -10,13 +10,16 @@ body {
 
 /* Hero section */
 .hero-section {
-    background-image: url("../photos/studygroup-min.jpg");
+    background-image: url("../photos/forum.png");
     background-size: cover;
     background-position: center;
     color: white;
+    align-items: center;
     text-align: center;
-    padding: 60px 20px; /* Adjust the spacing */
+    padding-top: 160px; /* Adds space to show the banner image clearly */
+    padding-bottom: auto;
     position: relative; /* Required for overlay */
+    height: 300px;
 }
 
 .hero-section:before {
