@@ -5,32 +5,39 @@ body {
     padding: 0;
     box-sizing: border-box;
     user-select: none;
+    background-color: #f1f1f1;
 }
 
 /* Hero Section */
-.hero {
-    text-align: center;
+.hero-section {
     padding: 40px;
-    background-color: #f9f9f9;
-    border-bottom: 1px solid #ccc;
-
-    background-image: url('../photos/communitybanner.png'), url('../photos/forum.png'); /* Stack banner and background images */
-    background-size: cover, cover; /* Cover the entire section */
-    background-position: top center, center; /* Position the banner at the top and main image centered */
-    background-repeat: no-repeat, no-repeat; /* Prevent both images from repeating */
+    background-image: url('../photos/communitybanner.png'); /* Add your background image path here */
+    background-size: cover;
+    background-position: center;
+    background-color: #e5e5e5; /* Fallback color */
+    height: 300px; 
     padding-top: 160px; /* Adds space to show the banner image clearly */
     padding-bottom: auto;
-    color: #333; /* Ensures text is readable */
-    position: relative;
-    
+    align-items: center;
+    text-align: center;
+    border: 1px transparent;
+    border-radius: 0 0 50px 50px;
 }
 
-.hero h1 {
-    font-size: 24px;
+
+.hero-section h1 {
+    font-size: 48px;
     text-transform: uppercase;
     margin-bottom: 20px;
+    color: black;
 }
 
+.hero-section h2 {
+    text-transform: uppercase;
+    font-size: 24px;
+    margin-bottom: 40px;
+    color: black; /*SAME BODY CHOOSE A COLOR HERE#########################################################################*/
+}
 .cta-button {
     margin-top: 100px;
     padding: 10px 20px;
@@ -52,21 +59,13 @@ body {
 
 .features-section {
     padding: 40px;
-    background-color: #fff;
     text-align: center;
-}
-.features-section h2 {
-    text-transform: uppercase;
-    font-size: 24px;
-    margin-bottom: 40px;
-    color: #333; /*SAME BODY CHOOSE A COLOR HERE#########################################################################*/
 }
 
 .feature-container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 20px;
     padding: 20px;
     text-align: center;
 }
@@ -83,7 +82,7 @@ body {
 }
 
 .feature-box h3 {
-    font-size: 20px;
+    font-size: 28px;
     margin-bottom: 10px;
 }
 
@@ -117,12 +116,4 @@ body {
     padding: 20px;
 }
 
-.features-section {
-    background-image: url('../photos/forum.png'); /* Path relative to CSS file */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: auto;
-    color: white;
-}
 
