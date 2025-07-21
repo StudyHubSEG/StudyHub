@@ -1,18 +1,40 @@
 #!/usr/bin/env python3
 
-import pexpect
+import subprocess
+import time
 
-# Run the initial command
-child = pexpect.spawn("g 10.33.40.20 telnet onie_reboot")
+# Start the telnet command
+process = subprocess.Popen(
+    ["g", "10.33.40.20", "telnet", "onie_reboot"],
+    stdin=subprocess.PIPE,
+    stdout=subprocess.PIPE,
+    stderr=subprocess.PIPE,
+    text=True
+)
 
-# Wait for the rescue mode message
-child.expect("discover: Rescue mode detected.  Installer disabled.")
+# Wait for the rescue mode message to appear
+while True:
+    output = process.stdout.readline()
+    print(output, end='')  # Show the output as it comes
+    
+    if "discover: Rescue mode detected.  Installer disabled." in output:
+        break
 
-# Press ENTER
-child.sendline("")
+# Hit enter to go into ONIE shell
+process.stdin.write("\n")
+process.stdin.flush()
 
-# Run the installation command
-child.sendline("onie-nos-install http://artifactory.ciena.com/valimar-snapshot/01-11-02-0087/meta-onie-installer-core-aarch64/meta_10-11-02-0087-core-aarch64.registry-int.bin")
+# Wait a moment
+time.sleep(2)
 
-# Show output
-child.interact()
+# Run the installer command
+installer_cmd = "onie-nos-install http://artifactory.ciena.com/valimar-snapshot/01-11-02-0087/meta-onie-installer-core-aarch64/meta_10-11-02-0087-core-aarch64.registry-int.bin\n"
+process.stdin.write(installer_cmd)
+process.stdin.flush()
+
+# Show remaining output
+while True:
+    output = process.stdout.readline()
+    if not output:
+        break
+    print(output, end='')
